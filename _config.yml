@@ -1,0 +1,29 @@
+title: Barb Hernández
+url: http://barbhernandez.com
+
+permalink: pretty
+auto: true
+server: true
+lsi: false
+pygments: true
+
+exclude: private
+
+nav:
+  - name: Inicio
+    path: /
+
+  - name: Proyectos
+    path: /proyectos/
+
+  - name: CV
+    path: /cv/
+
+  - contacto: Contacto
+    path: /contacto/
+
+
+
+
+
+
