@@ -1,17 +1,18 @@
-/* Design by http://www.dreamtemplate.com */
 @charset "utf-8";
+html {overflow-y: scroll;}
 body {
   margin:0;
   padding:0;
   width:100%;
   color:#b7b6b6;
-  font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
+  font:normal 12px/1.5em "Droid Sans","Liberation sans",Arial,Helvetica,sans-serif;
   background:#000;
 }
 html, .main {
   padding:0;
   margin:0;
 }
+
 .main {
   background:url(../images/header_bg.gif) repeat-x left 105px;
 }
