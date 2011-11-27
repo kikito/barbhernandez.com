@@ -10,16 +10,16 @@ pygments: true
 exclude: private
 
 nav:
-  - name: Inicio
+  - text: Inicio
     path: /
 
-  - name: Proyectos
+  - text: Proyectos
     path: /proyectos/
 
-  - name: CV
+  - text: CV
     path: /cv/
 
-  - contacto: Contacto
+  - text: Contacto
     path: /contacto/
 
 
