@@ -5,13 +5,13 @@
   <meta name="keywords"content="barb,hernandez,arte,10,arte10,informatica,ilustracion,tinta,imaginarios,fotografia"> 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" />
-  <link rel="stylesheet" type="text/css" href="/css/style.css" />
-  <link rel="stylesheet" type="text/css" href="/css/coin-slider.css" />
-  <link rel="stylesheet" type="text/css" href="/css/colorbox/colorbox.css" />
-  <script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
-  <script type="text/javascript" src="/js/coin-slider.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
-  <script type="text/javascript" src="/js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{ page.root }}css/style.css" />
+  <link rel="stylesheet" type="text/css" href="{{ page.root }}css/coin-slider.css" />
+  <link rel="stylesheet" type="text/css" href="{{ page.root }}css/colorbox/colorbox.css" />
+  <script type="text/javascript" src="{{ page.root }}js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="{{ page.root }}js/coin-slider.min.js"></script>
+  <script type="text/javascript" src="{{ page.root }}js/jquery.colorbox-min.js"></script>
+  <script type="text/javascript" src="{{ page.root }}js/script.js"></script>
 </head>
 <body>
 <div class="main">
@@ -21,9 +21,9 @@
         <ul>
         {% for link in site.nav %}
           {% assign active = '' %}
-          {% capture ugly_url %}{{ link.path }}index.html{% endcapture %}
+          {% capture ugly_url %}/{{ link.path }}index.html{% endcapture %}
           {% if page.url == ugly_url %}{% assign active = 'active' %}{% endif %}
-          <li class="{{ active }}"><a href="{{ link.path }}">{{ link.text }}</a></li>
+          <li class="{{ active }}"><a href="{{ page.root }}{{ link.path }}">{{ link.text }}</a></li>
         {% endfor %}
         </ul>
       </div>
