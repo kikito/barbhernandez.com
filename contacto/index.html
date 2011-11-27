@@ -1,37 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>Barb Hernandez | Contacto</title>
-<meta name="keywords"content="barb,hernandez,arte,10,arte10,informatica,ilustracion,tinta,imaginarios,fotografia"> 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/droid_sans_400-droid_sans_700.font.js"></script>
-<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/coin-slider.min.js"></script>
-</head>
-<body>
-<div class="main">
-  <div class="header">
-    <div class="header_resize">
-      <div class="menu_nav">
-        <ul>
-          <li><a href="index.html"><span>Inicio</span></a></li>
-          <li><a href="proyectos.html"><span>Proyectos</span></a></li>
-          <li><a href="cv.html"><span>CV</span></a></li>
-          <li class="active"><a href="contacto.html"><span>Contacto</span></a></li>
-          
-        </ul>
-      </div>
-      <div class="logo">
-        <h1><a href="index.html">Barb<span></span> <small>Portfolio</small></a></h1>
-      </div>
-      <div class="clr"></div>
-      <div class="clr"></div>
-    </div>
-  </div>
+---
+title: Contacto
+---
+
+{% include head.html %}
+
   <div class="content">
     <div class="content_resize">
       <div class="mainbar">
@@ -41,8 +13,9 @@
         </div>
           <div class="clr"></div>
           <form action="mailto:bhernandezbenito@gmail.com" method="post" id="sendemail">
-            <ol><li>
-              <label for="name">Nombre (requerido)</label>
+            <ol>
+              <li>
+                <label for="name">Nombre (requerido)</label>
                 <input id="name" name="name" class="text" />
               </li>
               <li>
@@ -58,17 +31,13 @@
                 <textarea id="message" name="message" rows="8" cols="50"></textarea>
               </li>
               <li>
-                 <input type="image" name="imageField" id="imageField" src="images/submit.gif" class="send" />
-                <div class="clr"></div>
+                 <input type="submit" value="enviar"/>
               </li>
             </ol>
           </form>
         </div>
       </div>
-      <div class="clr"></div>
     </div>
   </div>
-  <div class="footer"></div>
-</div>
-</body>
-</html>
+
+{% include foot.html %}
